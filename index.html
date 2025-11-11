@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>InterAgro</title>
+  <!-- Tipografías para hero (similar al estilo objetivo) -->
+  <!-- Preconnect para Google Fonts y carga de las familias usadas en CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,31 +24,66 @@
   <!-- Contenido Principal -->
   <div id="main-content" class="hidden">
 
-    <!-- Barra de navegación -->
-    <header>
-      <div class="menu-btn" id="menu-btn">
+    <!-- Barra de navegación estilo 'movie site' -->
+    <header class="top-nav">
+      <nav class="top-links">
+        <a href="#objetivos">OBJETIVOS</a>
+        <a href="sem4.html">DOCUMENTACIÓN</a>
+        <a href="#integrantes">INTEGRANTES</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+
+      <div class="nav-center">
+        <!-- simple leaf SVG as logo; reemplaza con tu imagen si prefieres -->
+        <svg class="nav-leaf" viewBox="0 0 64 64" width="48" height="48" aria-hidden="true" focusable="false">
+          <path d="M32 2C20 12 8 20 6 34c8-2 18-6 26-14 8-8 12-18 10-18S40 6 32 2z" fill="#2e7d32" />
+        </svg>
+      </div>
+
+      <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
         <span></span><span></span><span></span>
       </div>
-      <h2 class="logo-text">InterAgro</h2>
     </header>
 
-    <!-- Overlay del menú animado -->
-    <div class="menu-overlay" id="menu-overlay">
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#objetivos">Objetivos</a></li>
-          <li><a href="#integrantes">Integrantes</a></li>
-          <li><a href="#documentos">Documentos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <!-- Global menu (animado con SVG shape overlay) -->
+    <div class="global-menu">
+      <div class="global-menu__wrap">
+        <a href="sem1.html" class="global-menu__item">Sem 1</a>
+        <a href="sem2.html" class="global-menu__item">Sem 2</a>
+        <a href="sem3.html" class="global-menu__item">Sem 3</a>
+        <a href="sem4.html" class="global-menu__item">Sem 4</a>
+        <a href="sem5.html" class="global-menu__item">Sem 5</a>
+        <a href="sem6.html" class="global-menu__item">Sem 6</a>
+      </div>
     </div>
 
-    <!-- Sección principal -->
-    <section id="inicio" class="hero">
-      <h1>Conectando el campo con la ciudad</h1>
-      <p>Una plataforma digital que impulsa la comunicación entre campesinos y compradores.</p>
+    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+      <path class="shape-overlays__path"></path>
+    </svg>
+
+    <!-- Sección principal: hero tipográfico grande (INTER / AGRO estilo 'movie') -->
+    <section id="inicio" class="hero hero-giant">
+      <div class="hero-giant-inner">
+        <h1 class="main-head first">INTER</h1>
+        <h1 class="main-head second">AGRO</h1>
+      </div>
+
+      <!-- Pequeña tarjeta abajo a la izquierda (ej. trailer o acción) -->
+      <aside class="mini-card">
+        <div class="mini-card-title">INTERAGRO</div>
+        <div class="mini-card-sub">Conectando campesinos y compradores</div>
+        <button class="mini-play" aria-label="Reproducir">▶</button>
+      </aside>
+
+      <!-- Social vertical a la derecha -->
+      <div class="social-vertical">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">i</a>
+        <a href="#" aria-label="Twitter">t</a>
+      </div>
     </section>
 
   </div>
