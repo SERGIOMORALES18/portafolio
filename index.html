@@ -1,146 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Plataforma de Comercialización Directa — Proyecto</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body class="page-ready">
-    <a class="skip-link" href="#main-content">Saltar al contenido</a>
-    <header class="site-header">
-      <h1 class="logo">ComercioDirecto</h1>
-      <button id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú">☰</button>
-      <nav id="main-nav" class="main-nav" aria-label="navegación principal">
-        <a href="#proyecto">Proyecto</a>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#contacto">Contacto</a>
-  <a href="sem1.html">Semestres</a>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterAgro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Pantalla de Introducción -->
+  <div id="intro">
+    <img src="Imagenes/Logo-2.png" alt="Logo InterAgro" class="intro-logo">
+    <h1>INTERAGRO</h1>
+    <p>Conectando campesinos y compradores</p>
+    <button id="enter-btn">Entrar</button>
+  </div>
+
+  <!-- Contenido Principal -->
+  <div id="main-content" class="hidden">
+
+    <!-- Barra de navegación -->
+    <header>
+      <div class="menu-btn" id="menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+      <h2 class="logo-text">InterAgro</h2>
     </header>
 
-  <main id="main-content">
-      <section id="hero" class="hero">
-    <div id="three-wrap" class="canvas-wrap" aria-hidden="true"></div>
-    <div id="pixi-wrap" class="canvas-wrap" aria-hidden="true"></div>
-  <div class="hero-content">
-          <h2>Conecta productores directamente con compradores</h2>
-          <p class="lead">Eliminamos intermediarios para que los campesinos obtengan precios justos, mejores ingresos y mayor autonomía.</p>
-          <a class="btn" href="#proyecto">Conocer más</a>
-        </div>
-      </section>
-
-      <section id="proyecto" class="section content">
-        <h3>Resumen del proyecto</h3>
-        <p>Esta plataforma conecta a los productores agrícolas directamente con compradores y distribuidores, reduciendo intermediarios y mejorando la transparencia en las transacciones. Está diseñada para ser simple y accesible, incluso para usuarios con poca experiencia tecnológica.</p>
+    <!-- Overlay del menú animado -->
+    <div class="menu-overlay" id="menu-overlay">
+      <nav>
         <ul>
-          <li>Accesibilidad y simplicidad de uso.</li>
-          <li>Comunicación directa entre productor y comprador.</li>
-          <li>Mayor alcance y mejores precios para los agricultores.</li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#integrantes">Integrantes</a></li>
+          <li><a href="#documentos">Documentos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-      </section>
+      </nav>
+    </div>
 
-      <section id="integrantes" class="section">
-        <h3>Integrantes</h3>
-        <p class="lead">Equipo encargado del proyecto.</p>
-        <div class="cards-grid" id="team-grid">
-          <!-- Cards populated by HTML placeholders; reemplaza con tus fotos -->
-    <article class="card" tabindex="0">
-            <picture>
-                <source srcset="assets/avatars/diego.webp" type="image/webp">
-        <img class="avatar" src="assets/avatars/diego.svg" alt="Diego Jaramillo" loading="lazy" width="160" height="160">
-              </picture>
-      <h4>Diego Jaramillo</h4>
-      <p class="role">Diseñador</p>
-      <p class="bio">Hola, soy Diego Jaramillo, estudiante de Desarrollo de Software. Me encargo del diseño del proyecto.</p>
-          </article>
+    <!-- Sección principal -->
+    <section id="inicio" class="hero">
+      <h1>Conectando el campo con la ciudad</h1>
+      <p>Una plataforma digital que impulsa la comunicación entre campesinos y compradores.</p>
+    </section>
 
-          <article class="card" tabindex="0">
-            <picture>
-                <source srcset="assets/avatars/kenji.webp" type="image/webp">
-        <img class="avatar" src="assets/avatars/kenji.svg" alt="Kenji López" loading="lazy" width="160" height="160">
-              </picture>
-      <h4>Kenji López</h4>
-      <p class="role">Secretario</p>
-      <p class="bio">Hola, soy Kenji López, estudiante de Desarrollo de Software. Colaboro en la documentación y coordinación del equipo.</p>
-          </article>
+  </div>
 
-          <article class="card" tabindex="0">
-            <picture>
-                <source srcset="assets/avatars/carlos.webp" type="image/webp">
-        <img class="avatar" src="assets/avatars/carlos.svg" alt="Carlos Moya" loading="lazy" width="160" height="160">
-              </picture>
-      <h4>Carlos Moya</h4>
-      <p class="role">Administrador de BD</p>
-      <p class="bio">Hola, soy Carlos Moya, estudiante de Desarrollo de Software. Me encargo de la gestión de datos y la estructura de la base de datos.</p>
-          </article>
-
-          <article class="card" tabindex="0">
-            <picture>
-                <source srcset="assets/avatars/sergio.webp" type="image/webp">
-        <img class="avatar" src="assets/avatars/sergio.svg" alt="Sergio Morales" loading="lazy" width="160" height="160">
-              </picture>
-      <h4>Sergio Morales</h4>
-      <p class="role">Desarrollador</p>
-      <p class="bio">Hola, soy Sergio Morales, estudiante de Desarrollo de Software. Desarrollo las funcionalidades del proyecto.</p>
-          </article>
-        </div>
-  <p><a class="btn" href="sem1.html">Ir a semestres</a></p>
-      </section>
-
-      <section id="beneficios" class="section">
-        <h3>Impacto</h3>
-        <p>Mejoras económicas, empoderamiento comunitario y apoyo a prácticas agrícolas sostenibles.</p>
-      </section>
-
-      <section id="contacto" class="section">
-        <h3>Contacto</h3>
-        <p>¿Quieres colaborar o probar la plataforma? <a href="mailto:contacto@ejemplo.com">Escríbenos</a>.</p>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <small>© Proyecto ComercioDirecto — Diseñado para productores agrícolas</small>
-    </footer>
-
-  <script type="module">
-  // Always load Pixi overlay (for 2D effects)
-  const pixiScript = document.createElement('script');
-  pixiScript.src = 'https://pixijs.download/release/pixi.min.js';
-  pixiScript.defer = true;
-  pixiScript.onload = ()=>{ const px = document.createElement('script'); px.src = './js/pixi-main.js'; px.defer = true; document.body.appendChild(px); };
-  document.body.appendChild(pixiScript);
-
-  // Use hero-loader to lazy-load three-hero only on desktop + WebGL
-  const heroLoader = document.createElement('script');
-  heroLoader.src = 'js/hero-loader.js';
-  heroLoader.defer = true;
-  document.body.appendChild(heroLoader);
-    </script>
-    <script src="js/nav.js" defer></script>
-    <script src="js/transitions.js" defer></script>
-    <script defer>
-      // generate placeholder initials for missing avatars
-      function makeInitials(name){
-        if(!name) return '';
-        return name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
-      }
-      document.addEventListener('DOMContentLoaded', ()=>{
-        document.querySelectorAll('.card').forEach(card=>{
-          const img = card.querySelector('img.avatar');
-          if(!img) return;
-          // if image fails to load or src is empty, replace with placeholder
-          img.addEventListener('error', ()=>{
-            const name = card.querySelector('h4')?.textContent || '';
-            img.classList.add('placeholder');
-            img.src = '';
-            img.alt = name;
-            img.style.background = '';
-            img.style.objectFit = 'initial';
-            img.replaceWith(Object.assign(document.createElement('div'), {className:'avatar placeholder', textContent: makeInitials(name)}));
-          });
-        });
-      });
-    </script>
-  </body>
+  <script src="js/script.js"></script>
+</body>
 </html>
