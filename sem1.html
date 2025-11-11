@@ -1,33 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Semestre 1 — Proyecto</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body class="page-ready">
-    <a class="skip-link" href="#main-content">Saltar al contenido</a>
-    <header class="site-header">
-  <h1 class="logo"><a href="index.html">ComercioDirecto</a></h1>
-      <nav aria-label="navegación principal">
-  <a href="index.html">Inicio</a>
-  <a href="sem1.html">Fase 1</a>
-  <a href="sem2.html">Fase 2</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>InterAgro — Objetivos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="top-nav">
+    <nav class="top-links">
+      <a href="sem1.html">OBJETIVOS</a>
+      <a href="sem4.html">DOCUMENTACIÓN</a>
+      <a href="#integrantes">INTEGRANTES</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+
+    <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- include the same menu overlay markup so the menu works on this page -->
+  <div class="global-menu">
+    <div class="global-menu__wrap">
+      <a href="sem1.html" class="global-menu__item">Sem 1</a>
+      <a href="sem2.html" class="global-menu__item">Sem 2</a>
+      <a href="sem3.html" class="global-menu__item">Sem 3</a>
+      <a href="sem4.html" class="global-menu__item">Sem 4</a>
+      <a href="sem5.html" class="global-menu__item">Sem 5</a>
+      <a href="sem6.html" class="global-menu__item">Sem 6</a>
+    </div>
+  </div>
+
+  <div class="menu-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav" aria-label="Menú principal">
+        <a href="sem1.html" class="menu-overlay__item">Sem 1</a>
+        <a href="sem2.html" class="menu-overlay__item">Sem 2</a>
+        <a href="sem3.html" class="menu-overlay__item">Sem 3</a>
+        <a href="sem4.html" class="menu-overlay__item">Sem 4</a>
+        <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
+        <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
       </nav>
-    </header>
-  <main id="main-content" class="section">
-      <h2>Semestre 1</h2>
-      <p>Contenido específico de la fase 1. Aquí agrega objetivos, entregables y recursos.</p>
+
+      <aside class="menu-overlay__info">
+        <h2>Sobre este sitio</h2>
+        <p>Proyecto InterAgro — conectando campesinos y compradores. Aquí puedes navegar los semestres y la documentación del proyecto.</p>
+      </aside>
+    </div>
+  </div>
+
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+
+  <main class="page-content">
+    <article class="doc-section">
+      <h1>OBJETIVOS</h1>
+
+      <h2>Objetivo general</h2>
+      <p>Establecer una plataforma digital que facilite la comunicación efectiva entre campesinos y compradores para mejorar la comercialización de los productos del campo, reduciendo intermediarios y fomentando transacciones seguras y directas.</p>
+
+      <h2>Objetivos específicos</h2>
       <ul>
-        <li>Objetivo 1</li>
-        <li>Entregable A</li>
-        <li>Recursos y enlaces</li>
+        <li>Diseñar una interfaz intuitiva para que los campesinos creen perfiles y publiquen productos con descripción, precio y ubicación.</li>
+        <li>Desarrollar un algoritmo de emparejamiento que conecte campesinos con compradores según necesidades y ubicación.</li>
+        <li>Integrar mensajería en tiempo real para comunicación directa y segura entre partes.</li>
+        <li>Implementar un sistema de calificaciones y reseñas que fomente confianza y responsabilidad.</li>
       </ul>
-      <p><a class="btn" href="sem2.html">Siguiente: Semestre 2</a></p>
-    </main>
-    <footer class="site-footer">© 2025 ComercioDirecto</footer>
-  <script src="js/nav.js" defer></script>
-  <script src="js/transitions.js" defer></script>
-  </body>
+
+      <h2>Problemáticas a abordar</h2>
+      <ul>
+        <li>Falta de acceso a mercados amplios por limitaciones geográficas.</li>
+        <li>Dependencia de intermediarios que reducen ganancias de los productores.</li>
+        <li>Inseguridad en transacciones y dificultad para garantizar calidad y entrega.</li>
+      </ul>
+
+      <h2>Viabilidad</h2>
+      <p>El proyecto es viable en Colombia por la demanda de mejores canales de venta y por la expansión del uso móvil en zonas rurales. Requiere análisis legal, capacitación a usuarios, alianzas locales y un modelo de negocio sostenible que no perjudique a los campesinos.</p>
+
+      <h2>Marco teórico (resumen)</h2>
+      <p>La agricultura en Colombia presenta diversidad de cultivos y predominio de pequeños productores que enfrentan barreras de comercialización. Las plataformas digitales pueden reducir intermediarios, mejorar la gestión de la cadena de suministro y facilitar comunicaciones seguras entre productores y compradores.</p>
+
+      <h2>Impacto esperado</h2>
+      <p>Se espera que la plataforma aumente transparencia en las transacciones, reduzca intermediarios, mejore ingresos de productores y facilite acceso de compradores a productos frescos y de calidad.</p>
+    </article>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
 </html>

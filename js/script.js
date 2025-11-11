@@ -154,6 +154,29 @@ globalMenuItems.forEach(item => {
   });
 });
 
+// Close button inside the new .menu-overlay (if present)
+const menuCloseBtn = document.querySelector('.menu-close');
+if (menuCloseBtn) {
+  menuCloseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    // hide simple overlay if present
+    if (menuOverlay) menuOverlay.classList.remove('active');
+
+    // if there's a shape overlay animation, toggle it (so both animations stay in sync)
+    if (shapeOverlay && !shapeOverlay.isAnimating && shapeOverlay.isOpened) {
+      shapeOverlay.toggle();
+      menuBtn.classList.remove('is-opened-navi');
+      globalMenuItems.forEach((it) => it.classList.remove('is-opened'));
+      // hide the .global-menu after animation finishes (same wait used elsewhere)
+      const wait = shapeOverlay.duration + shapeOverlay.delayPerPath * shapeOverlay.path.length + shapeOverlay.delayPointsMax;
+      setTimeout(() => {
+        const globalMenu = document.querySelector('.global-menu');
+        if (globalMenu) globalMenu.style.display = 'none';
+      }, wait);
+    }
+  });
+}
+
 // Hacer que el logo en el intro también abra el sitio si se hace click (mejora UX)
 const introLogo = document.querySelector('#intro .intro-logo');
 if (introLogo) {
