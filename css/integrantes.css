@@ -1,0 +1,196 @@
+body {
+  background: linear-gradient(135deg, #eaf3ea 0%, #f5f6f7 100%);
+}
+.integrantes-main {
+  padding: 3rem 1rem 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.integrantes-title {
+  font-family: 'Cinzel', serif;
+  color: #207c3a;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(46,125,50,0.08);
+}
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
+}
+.integrante-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(46,125,50,0.13), 0 1.5px 8px rgba(46,125,50,0.08);
+  padding: 2.2rem 1.2rem 1.7rem 1.2rem;
+  text-align: center;
+  transition: transform 0.35s cubic-bezier(.22,.9,.3,1), box-shadow 0.35s;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  animation: fadeInUp 0.8s forwards;
+}
+.integrante-card:nth-child(1) { animation-delay: 0.1s; }
+.integrante-card:nth-child(2) { animation-delay: 0.2s; }
+.integrante-card:nth-child(3) { animation-delay: 0.3s; }
+.integrante-card:nth-child(4) { animation-delay: 0.4s; }
+.integrante-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(46,125,50,0.18), 0 2px 12px rgba(46,125,50,0.10);
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.integrante-foto {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.1rem;
+  border: 3px solid #207c3a;
+  box-shadow: 0 4px 16px rgba(46,125,50,0.10);
+  background: #eaf3ea;
+}
+.integrante-nombre {
+  font-family: 'Montserrat', sans-serif;
+  color: #207c3a;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+.integrante-rol {
+  color: #222;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.integrante-desc {
+  color: #333;
+  font-size: 1.02rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+@media (max-width: 900px) {
+  .integrantes-title {
+    font-size: 2.2rem;
+  }
+  .integrantes-main {
+    padding: 1.2rem 0.2rem;
+  }
+  .integrantes-grid {
+    gap: 1.2rem;
+  }
+  .integrante-card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .integrante-foto {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+body {
+  background: #f5f6f7;
+}
+.integrantes-main {
+  padding: 3rem 1rem 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.integrantes-title {
+  font-family: 'Cinzel', serif;
+  color: #207c3a;
+  text-align: center;
+  font-size: 2.7rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+}
+.integrantes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.2rem;
+}
+.integrante-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(46,125,50,0.10);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(.22,.9,.3,1), box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.7s forwards;
+}
+.integrante-card:nth-child(1) { animation-delay: 0.1s; }
+.integrante-card:nth-child(2) { animation-delay: 0.2s; }
+.integrante-card:nth-child(3) { animation-delay: 0.3s; }
+.integrante-card:nth-child(4) { animation-delay: 0.4s; }
+.integrante-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 40px rgba(46,125,50,0.18);
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.integrante-foto {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.1rem;
+  border: 3px solid #207c3a;
+  box-shadow: 0 4px 16px rgba(46,125,50,0.10);
+  background: #eaf3ea;
+}
+.integrante-nombre {
+  font-family: 'Montserrat', sans-serif;
+  color: #207c3a;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+.integrante-rol {
+  color: #222;
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.integrante-desc {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .integrantes-title {
+    font-size: 2rem;
+  }
+  .integrantes-main {
+    padding: 1.2rem 0.2rem;
+  }
+  .integrantes-grid {
+    gap: 1rem;
+  }
+  .integrante-card {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .integrante-foto {
+    width: 70px;
+    height: 70px;
+  }
+}

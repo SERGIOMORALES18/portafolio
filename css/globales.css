@@ -130,11 +130,14 @@ header {
 .hero-giant { position: relative; min-height: 100vh; display:flex; align-items:center; justify-content:center; background:#f5f6f7; overflow:hidden; margin-top: 0; padding-top: 0; }
 .hero-giant-inner { display:flex; flex-direction:column; gap:0; align-items:flex-start; max-width:100%; }
 .hero-giant-inner { display:flex; flex-direction:column; gap:0; align-items:flex-start; width:100%; max-width:1400px; padding:0 2vw; }
-.main-head { font-family: 'Cinzel', serif; color:#0b0b0b; font-size: 42vw; line-height:0.78; margin:0; transform: translateZ(0); text-transform:uppercase; letter-spacing:8px; position:relative; z-index:1; }
+.main-head { font-family: 'Cinzel', serif; color:#0b0b0b; font-size: clamp(2.5rem, 18vw, 30vw) !important; line-height:0.78; margin:0; transform: translateZ(0); text-transform:uppercase; letter-spacing:8px; position:relative; z-index:1; }
 .main-head.first { text-align:left; transform-origin:left; margin-left:0; }
 .main-head.second { text-align:right; align-self:flex-end; margin-right:0; }
 
-@media (max-width: 700px) { .main-head { font-size: 14vw; letter-spacing:2px; } .hero-giant-inner { padding:0 2rem; } }
+@media (max-width: 900px) {
+	.main-head { font-size: clamp(2rem, 14vw, 18vw) !important; letter-spacing:2px; }
+	.hero-giant-inner { padding:0 1rem; }
+}
 
 .mini-card { position: absolute; left: 2rem; bottom: 2.5rem; background: #fff; padding: 1rem; border-radius:8px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); display:flex; flex-direction:column; gap:0.5rem; align-items:flex-start; z-index:50; }
 .mini-card-title { font-weight:800; font-size:0.9rem; }

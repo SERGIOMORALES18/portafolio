@@ -26,11 +26,12 @@
 
     <!-- Barra de navegación estilo 'movie site' -->
     <header class="top-nav">
-      <nav class="top-links">
-        <a href="sem1.html">OBJETIVOS</a>
-        <a href="sem4.html">DOCUMENTACIÓN</a>
-        <a href="#integrantes">INTEGRANTES</a>
-        <a href="#contacto">CONTACTO</a>
+    <nav class="top-links">
+  <a href="Objetivos.html">OBJETIVOS</a>
+  <a href="documentacion.html">DOCUMENTACIÓN</a>
+  <a href="Integrantes.html">INTEGRANTES</a>
+  <a href="#contacto">CONTACTO</a>
+  <a href="#" id="reiniciar-intro" style="color:#207c3a;font-weight:600;">Ver intro</a>
       </nav>
 
       <!-- nav-center removed (leaf logo removed per request to avoid overlap with hero) -->
@@ -43,10 +44,7 @@
     <!-- Global menu (animado con SVG shape overlay) -->
     <div class="global-menu">
       <div class="global-menu__wrap">
-        <a href="sem1.html" class="global-menu__item">Sem 1</a>
-        <a href="sem2.html" class="global-menu__item">Sem 2</a>
-        <a href="sem3.html" class="global-menu__item">Sem 3</a>
-        <a href="sem4.html" class="global-menu__item">Sem 4</a>
+  <a href="documentacion.html" class="global-menu__item">Documentación</a>
         <a href="sem5.html" class="global-menu__item">Sem 5</a>
         <a href="sem6.html" class="global-menu__item">Sem 6</a>
       </div>
@@ -57,10 +55,7 @@
       <button class="menu-close" aria-label="Cerrar menú">✕</button>
       <div class="menu-overlay__inner">
         <nav class="menu-overlay__nav" aria-label="Menú principal">
-          <a href="sem1.html" class="menu-overlay__item">Sem 1</a>
-          <a href="sem2.html" class="menu-overlay__item">Sem 2</a>
-          <a href="sem3.html" class="menu-overlay__item">Sem 3</a>
-          <a href="sem4.html" class="menu-overlay__item">Sem 4</a>
+          <a href="documentacion.html" class="menu-overlay__item">Documentación</a>
           <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
           <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
         </nav>
@@ -87,13 +82,6 @@
         <h1 class="main-head second">AGRO</h1>
       </div>
 
-      <!-- Pequeña tarjeta abajo a la izquierda (ej. trailer o acción) -->
-      <aside class="mini-card">
-        <div class="mini-card-title">INTERAGRO</div>
-        <div class="mini-card-sub">Conectando campesinos y compradores</div>
-        <button class="mini-play" aria-label="Reproducir">▶</button>
-      </aside>
-
       <!-- Social vertical a la derecha -->
       <div class="social-vertical">
         <a href="#" aria-label="Facebook">f</a>
@@ -106,5 +94,17 @@
 
   <script src="js/menu_animado.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var reiniciar = document.getElementById('reiniciar-intro');
+      if (reiniciar) {
+        reiniciar.addEventListener('click', function(e) {
+          e.preventDefault();
+          localStorage.removeItem('interagro_intro_shown');
+          location.reload();
+        });
+      }
+    });
+  </script>
 </body>
 </html>

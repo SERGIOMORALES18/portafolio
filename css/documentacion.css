@@ -1,0 +1,257 @@
+.docu-item.animated {
+  animation: fadeInUpDocu 0.9s cubic-bezier(.22,.9,.3,1);
+}
+@keyframes fadeInUpDocu {
+  from { opacity: 0; transform: translateY(40px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.docu-name {
+  font-family: 'Cinzel', serif;
+  color: #207c3a;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+.docu-desc {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+}
+.docu-actions {
+  margin-bottom: 0.7rem;
+}
+.docu-expand {
+  background: #207c3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.docu-expand:hover {
+  background: #2e7d32;
+  transform: scale(1.07);
+}
+.docu-pdf-wrap {
+  transition: box-shadow 0.3s, transform 0.3s, width 0.3s, height 0.3s;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+  border-radius: 10px;
+  background: #fafafa;
+  margin-bottom: 0.2rem;
+  width: 320px;
+  height: 380px;
+  overflow: hidden;
+  position: relative;
+}
+.docu-pdf-wrap.expanded {
+  width: 98vw;
+  height: 80vh;
+  z-index: 100;
+  box-shadow: 0 16px 60px rgba(46,125,50,0.18);
+}
+.docu-pdf {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #fafafa;
+}
+@media (max-width: 900px) {
+  .docu-pdf-wrap, .docu-pdf-wrap.expanded {
+    width: 98vw;
+    height: 60vw;
+    min-height: 220px;
+    max-height: 70vh;
+  }
+}
+/* Decoración ondulada superior */
+.docu-wave {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin-bottom: -32px;
+}
+.docu-main {
+  position: relative;
+  z-index: 3;
+}
+
+body {
+  background: #f5f6f7;
+}
+.docu-main {
+  padding: 3rem 1rem 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.docu-title {
+  font-family: 'Cinzel', serif;
+  color: #207c3a;
+  text-align: left;
+  font-size: 2.7rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 12px rgba(46,125,50,0.08);
+}
+/* Lista alterna de documentos */
+.docu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 1.5rem;
+}
+.docu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin-top: 2.2rem;
+  position: relative;
+  z-index: 3;
+}
+.docu-item {
+  background: #fff;
+  border-radius: 32px 32px 22px 22px;
+  box-shadow: 0 16px 48px rgba(46,125,50,0.16), 0 2px 12px rgba(46,125,50,0.08);
+  padding: 2.2rem 2.8rem;
+  display: flex;
+  align-items: stretch;
+  gap: 2.8rem;
+  transition: box-shadow 0.3s, transform 0.3s;
+  max-width: 1100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+.docu-item.docu-left {
+  flex-direction: row;
+  margin-left: 0;
+  margin-right: auto;
+}
+.docu-item.docu-right {
+  flex-direction: row-reverse;
+  margin-right: 0;
+  margin-left: auto;
+}
+.docu-item:hover {
+  box-shadow: 0 16px 40px rgba(46,125,50,0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+.docu-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: flex-start;
+.docu-info.side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 260px;
+  max-width: 420px;
+  padding: 0 0.5rem;
+}
+.docu-name {
+  font-family: 'Montserrat', sans-serif;
+  color: #207c3a;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+.docu-pdf {
+  border: 1.5px solid #eaf3ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+  width: 320px;
+  height: 380px;
+  background: #fafafa;
+.docu-pdf-wrap.big {
+  width: 520px;
+  height: 640px;
+  min-width: 220px;
+  min-height: 220px;
+  max-width: 98vw;
+  max-height: 70vh;
+}
+.docu-pdf {
+  border: 1.5px solid #eaf3ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(46,125,50,0.08);
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+}
+@media (max-width: 900px) {
+  .docu-item {
+    flex-direction: column !important;
+    align-items: stretch;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem;
+    gap: 1rem;
+  }
+  .docu-pdf-wrap.big {
+    width: 98vw;
+    height: 320px;
+    min-height: 180px;
+    max-height: 60vw;
+  }
+  .docu-info.side {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 0;
+  }
+}
+/* Fondo con puntos animados */
+.docu-bg-points {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;
+}
+.docu-point {
+  position: absolute;
+  width: 32px; height: 32px;
+  background: radial-gradient(circle at 30% 30%, #eaf3ea 80%, #c8e6c9 100%);
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatPoint 4s infinite ease-in-out;
+}
+@keyframes floatPoint {
+  0% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(-18px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.7; }
+}
+@media (max-width: 700px) {
+  .docu-title {
+    font-size: 1.5rem;
+  }
+  .docu-main {
+    padding: 1.2rem 0.2rem;
+  }
+  .docu-list {
+    gap: 1rem;
+  }
+  .docu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.2rem 0.7rem;
+    gap: 1rem;
+  }
+  .docu-icon {
+    width: 38px;
+    height: 38px;
+  }
+  .docu-name {
+    font-size: 1rem;
+  }
+  .docu-open {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

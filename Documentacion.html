@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterAgro — Documentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/globales.css">
+  <link rel="stylesheet" href="css/documentacion.css">
+</head>
+<body>
+  <!-- Decoración ondulada superior -->
+  <div class="docu-wave">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:120px;display:block">
+      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#eaf3ea"/>
+    </svg>
+  </div>
+  <header class="top-nav">
+    <nav class="top-links">
+      <a href="index.html">INICIO</a>
+      <a href="Objetivos.html">OBJETIVOS</a>
+      <a href="Integrantes.html">INTEGRANTES</a>
+      <a href="#contacto">CONTACTO</a>
+    </nav>
+    <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="global-menu">
+    <div class="global-menu__wrap">
+      <a href="sem4.html" class="global-menu__item">Sem 4</a>
+      <a href="sem5.html" class="global-menu__item">Sem 5</a>
+      <a href="sem6.html" class="global-menu__item">Sem 6</a>
+    </div>
+  </div>
+
+  <div class="menu-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav" aria-label="Menú principal">
+        <a href="sem4.html" class="menu-overlay__item">Sem 4</a>
+        <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
+        <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
+      </nav>
+      <aside class="menu-overlay__info">
+        <h2>Sobre este sitio</h2>
+        <p>Proyecto InterAgro — conectando campesinos y compradores. Aquí puedes navegar los semestres y la documentación del proyecto.</p>
+      </aside>
+    </div>
+  </div>
+
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+
+  <main class="docu-main">
+    <h1 class="docu-title">Documentación</h1>
+    <div class="docu-bg-points">
+      <div class="docu-point" style="top: 120px; left: 8vw;"></div>
+      <div class="docu-point" style="top: 340px; left: 80vw;"></div>
+      <div class="docu-point" style="top: 600px; left: 20vw;"></div>
+      <div class="docu-point" style="top: 900px; left: 70vw;"></div>
+    </div>
+    <section class="docu-list">
+      <div class="docu-item docu-left animated">
+        <div class="docu-pdf-wrap big">
+          <iframe class="docu-pdf" src="Documentos/Diagrama-actividades.pdf"></iframe>
+        </div>
+        <div class="docu-info side">
+          <div class="docu-name">Diagrama de Actividades</div>
+          <div class="docu-desc">Visualiza el flujo de actividades principales del sistema, útil para entender los procesos y la lógica general del proyecto.</div>
+        </div>
+      </div>
+      <div class="docu-item docu-right animated">
+        <div class="docu-pdf-wrap big">
+          <iframe class="docu-pdf" src="Documentos/Fichas-caso-de-uso.pdf"></iframe>
+        </div>
+        <div class="docu-info side">
+          <div class="docu-name">Fichas de Caso de Uso</div>
+          <div class="docu-desc">Contiene especificaciones detalladas de los casos de uso, mostrando los actores, escenarios y requisitos funcionales.</div>
+        </div>
+      </div>
+      <div class="docu-item docu-left animated">
+        <div class="docu-pdf-wrap big">
+          <iframe class="docu-pdf" src="Documentos/IEE 830 Interagro.pdf"></iframe>
+        </div>
+        <div class="docu-info side">
+          <div class="docu-name">IEE 830 Interagro</div>
+          <div class="docu-desc">Documento de requisitos de software según la norma IEEE 830, con todos los requerimientos del sistema Interagro.</div>
+        </div>
+      </div>
+      <div class="docu-item docu-right animated">
+        <div class="docu-pdf-wrap big">
+          <iframe class="docu-pdf" src="Documentos/Product-blackog.pdf"></iframe>
+        </div>
+        <div class="docu-info side">
+          <div class="docu-name">Product Backlog</div>
+          <div class="docu-desc">Lista priorizada de funcionalidades y tareas del proyecto, útil para la gestión ágil y el seguimiento del desarrollo.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/menu_animado.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
