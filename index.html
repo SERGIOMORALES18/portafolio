@@ -30,50 +30,42 @@
   <a href="Objetivos.html">OBJETIVOS</a>
   <a href="documentacion.html">DOCUMENTACIÓN</a>
   <a href="Integrantes.html">INTEGRANTES</a>
-  <a href="#contacto">CONTACTO</a>
+  <a href="contacto.html">CONTACTO</a>
   <a href="#" id="reiniciar-intro" style="color:#207c3a;font-weight:600;">Ver intro</a>
       </nav>
 
-      <!-- nav-center removed (leaf logo removed per request to avoid overlap with hero) -->
-
-      <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </div>
-    </header>
-
-    <!-- Global menu (animado con SVG shape overlay) -->
-    <div class="global-menu">
-      <div class="global-menu__wrap">
-  <a href="documentacion.html" class="global-menu__item">Documentación</a>
-        <a href="sem5.html" class="global-menu__item">Sem 5</a>
-        <a href="sem6.html" class="global-menu__item">Sem 6</a>
-      </div>
+         <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
     </div>
+  </header>
 
-    <!-- Fullscreen menu overlay (added): large left column with links and right column with info -->
-    <div class="menu-overlay" role="dialog" aria-modal="true" aria-hidden="true">
-      <button class="menu-close" aria-label="Cerrar menú">✕</button>
-      <div class="menu-overlay__inner">
-        <nav class="menu-overlay__nav" aria-label="Menú principal">
-          <a href="documentacion.html" class="menu-overlay__item">Documentación</a>
-          <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
-          <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
-        </nav>
-
-        <aside class="menu-overlay__info">
-          <h2>Sobre este sitio</h2>
-          <p>Proyecto InterAgro — conectando campesinos y compradores. Aquí puedes navegar los semestres y la documentación del proyecto.</p>
-          <p class="menu-overlay__credits">Diseño y demo — ajusta el contenido según necesites.</p>
-        </aside>
-      </div>
+  <div class="global-menu">
+    <div class="global-menu__wrap">
+      <a href="sem5.html" class="global-menu__item">Sem 5</a>
+      <a href="sem6.html" class="global-menu__item">Sem 6</a>
     </div>
+  </div>
 
-    <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
-      <path class="shape-overlays__path"></path>
-      <path class="shape-overlays__path"></path>
-      <path class="shape-overlays__path"></path>
-      <path class="shape-overlays__path"></path>
-    </svg>
+  <div class="menu-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav" aria-label="Menú principal">
+        <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
+        <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
+      </nav>
+      <aside class="menu-overlay__info">
+        <h2>Sobre este sitio</h2>
+        <p>Proyecto InterAgro — conectando campesinos y compradores. Aquí puedes navegar los semestres y la documentación del proyecto.</p>
+      </aside>
+    </div>
+  </div>
+
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
 
     <!-- Sección principal: hero tipográfico grande (INTER / AGRO estilo 'movie') -->
     <section id="inicio" class="hero hero-giant">
@@ -90,6 +82,70 @@
       </div>
     </section>
 
+    <!-- Información adicional del proyecto -->
+  <section id="project-info" class="modern-section">
+    <div class="info-container">
+      <h2>Sobre InterAgro</h2>
+      <p>InterAgro es una plataforma diseñada para conectar campesinos y compradores, facilitando el comercio justo y sostenible. Nuestro objetivo es empoderar a las comunidades rurales mediante tecnología accesible y eficiente.</p>
+      <div class="info-grid">
+        <div class="info-item">
+          <h3>Innovación</h3>
+          <p>Utilizamos herramientas modernas para optimizar la cadena de suministro agrícola.</p>
+        </div>
+        <div class="info-item">
+          <h3>Sostenibilidad</h3>
+          <p>Promovemos prácticas agrícolas responsables y respetuosas con el medio ambiente.</p>
+        </div>
+        <div class="info-item">
+          <h3>Impacto Social</h3>
+          <p>Fomentamos el desarrollo económico de las comunidades rurales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .modern-section {
+      padding: 50px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .info-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .info-container h2 {
+      font-size: 2.5rem;
+      color: #207c3a;
+      margin-bottom: 20px;
+    }
+    .info-container p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .info-grid {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .info-item {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .info-item h3 {
+      font-size: 1.5rem;
+      color: #207c3a;
+      margin-bottom: 10px;
+    }
+    .info-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
   </div>
 
   <script src="js/menu_animado.js"></script>
@@ -106,5 +162,13 @@
       }
     });
   </script>
-</body>
+    <!-- Agregar SVG para animación de menú hamburguesa -->
+    <div class="shape-overlays">
+      <svg width="100vw" height="100vh" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+        <path class="shape-overlays__path"></path>
+      </svg>
+    </div>
+  </body>
 </html>

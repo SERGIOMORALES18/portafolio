@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InterAgro — Documentación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/globales.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <!-- Decoración ondulada superior -->
+  <div class="docu-wave">
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:120px;display:block">
+      <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#eaf3ea"/>
+    </svg>
+  </div>
+  <header class="top-nav">
+    <nav class="top-links">
+      <a href="index.html">INICIO</a>
+      <a href="Objetivos.html">OBJETIVOS</a>
+      <a href="Integrantes.html">INTEGRANTES</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+    <div class="menu-btn hamburger" id="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="global-menu">
+    <div class="global-menu__wrap">
+      <a href="sem5.html" class="global-menu__item">Sem 5</a>
+      <a href="sem6.html" class="global-menu__item">Sem 6</a>
+    </div>
+  </div>
+
+  <div class="menu-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-overlay__inner">
+      <nav class="menu-overlay__nav" aria-label="Menú principal">
+        <a href="sem5.html" class="menu-overlay__item">Sem 5</a>
+        <a href="sem6.html" class="menu-overlay__item">Sem 6</a>
+      </nav>
+      <aside class="menu-overlay__info">
+        <h2>Sobre este sitio</h2>
+        <p>Proyecto InterAgro — conectando campesinos y compradores. Aquí puedes navegar los semestres y la documentación del proyecto.</p>
+      </aside>
+    </div>
+  </div>
+
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+    <main id="main-content">
+      <section class="contact-section modern-contact">
+        <h2><span class="contact-icon">📞</span> Contáctanos</h2>
+        <div class="contact-card">
+          <div class="contact-details">
+            <div class="contact-row">
+              <div class="contact-data">
+                <span class="data-icon email"></span>
+                <div>
+                  <span class="data-label">Email</span>
+                  <span class="data-value">contacto@comerciodirecto.com</span>
+                </div>
+              </div>
+              <div class="contact-data">
+                <span class="data-icon phone"></span>
+                <div>
+                  <span class="data-label">Teléfono</span>
+                  <span class="data-value">+52 55 1234 5678</span>
+                </div>
+              </div>
+              <div class="contact-data">
+                <span class="data-icon address"></span>
+                <div>
+                  <span class="data-label">Dirección</span>
+                  <span class="data-value">Calle Ficticia 123, Ciudad, País</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <span class="data-label">Síguenos en redes sociales</span>
+            <div class="social-icons">
+              <a href="https://facebook.com/comerciodirecto" target="_blank" rel="noopener" aria-label="Facebook" class="social-btn facebook">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor"><circle cx="16" cy="16" r="16" fill="#4267B2"/><path d="M22 16h-3v8h-4v-8h-2v-3h2v-2c0-2 1-3 3-3h3v3h-2c-0.6 0-1 0.4-1 1v1h3l-1 3z" fill="#fff"/></svg>
+              </a>
+              <a href="https://twitter.com/comerciodirecto" target="_blank" rel="noopener" aria-label="Twitter" class="social-btn twitter">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor"><circle cx="16" cy="16" r="16" fill="#1DA1F2"/><path d="M25 11.5c-0.7 0.3-1.4 0.5-2.1 0.6 0.8-0.5 1.3-1.2 1.6-2.1-0.7 0.4-1.5 0.7-2.3 0.9-0.7-0.7-1.6-1.1-2.6-1.1-2 0-3.5 1.6-3.5 3.5 0 0.3 0 0.6 0.1 0.9-2.9-0.1-5.5-1.5-7.2-3.7-0.3 0.6-0.5 1.2-0.5 1.9 0 1.3 0.7 2.4 1.7 3.1-0.6 0-1.2-0.2-1.7-0.5v0.1c0 1.8 1.3 3.3 3 3.6-0.3 0.1-0.7 0.2-1 0.2-0.2 0-0.3 0-0.5-0.1 0.3 1.1 1.4 2 2.7 2-1 0.8-2.2 1.2-3.5 1.2-0.2 0-0.4 0-0.6 0 1.2 0.8 2.6 1.3 4.1 1.3 4.9 0 7.6-4.1 7.6-7.6v-0.3c0.5-0.4 1-0.9 1.3-1.5z" fill="#fff"/></svg>
+              </a>
+              <a href="https://instagram.com/comerciodirecto" target="_blank" rel="noopener" aria-label="Instagram" class="social-btn instagram">
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor"><circle cx="16" cy="16" r="16" fill="#E1306C"/><path d="M21 10h-6c-2.2 0-4 1.8-4 4v6c0 2.2 1.8 4 4 4h6c2.2 0 4-1.8 4-4v-6c0-2.2-1.8-4-4-4zm2 10c0 1.1-0.9 2-2 2h-6c-1.1 0-2-0.9-2-2v-6c0-1.1 0.9-2 2-2h6c1.1 0 2 0.9 2 2v6zm-5-5c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zm4.5-2.5c0 0.6-0.5 1-1 1s-1-0.5-1-1 0.5-1 1-1 1 0.5 1 1z" fill="#fff"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-links">
+            <span class="data-label">Otras páginas</span>
+            <div class="other-links">
+              <a href="https://www.linkedin.com/company/comerciodirecto" target="_blank" rel="noopener" class="other-btn linkedin">LinkedIn</a>
+              <a href="https://www.youtube.com/@comerciodirecto" target="_blank" rel="noopener" class="other-btn youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">© 2025 ComercioDirecto</footer>
+    <script src="js/menu_animado.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+      .modern-contact {
+        background: #fff;
+        box-shadow: 0 4px 32px rgba(0,0,0,0.09);
+        border-radius: 22px;
+        padding: 2.5rem 2rem;
+        max-width: 600px;
+        margin: 3rem auto;
+      }
+      .modern-contact h2 {
+        font-family: 'Cinzel', serif;
+        font-size: 2.7rem;
+        color: #23422a;
+        font-weight: 700;
+        margin-bottom: 2.2rem;
+        text-align: center;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.7rem;
+      }
+      .contact-icon {
+        font-size: 2.2rem;
+        color: #3a6c3a;
+      }
+      .contact-card {
+        background: #f3f5ef;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        padding: 2rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+      }
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-between;
+      }
+      .contact-data {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: #e9f0e9;
+        border-radius: 10px;
+        padding: 1rem 1.2rem;
+        min-width: 170px;
+        flex: 1 1 0;
+        box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+      }
+      .data-icon {
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        border-radius: 50%;
+        background: #23422a;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 36px;
+      }
+      .data-icon.email::before { content: '\2709'; font-size: 1.4rem; }
+      .data-icon.phone::before { content: '\260E'; font-size: 1.4rem; }
+      .data-icon.address::before { content: '\1F4CD'; font-size: 1.4rem; }
+      .data-label {
+        font-weight: 600;
+        color: #23422a;
+        font-size: 1.08rem;
+        margin-bottom: 0.2rem;
+        display: block;
+      }
+      .data-value {
+        color: #23422a;
+        font-size: 1.08rem;
+        font-family: 'Montserrat', Arial, sans-serif;
+      }
+      .contact-social {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: flex-start;
+      }
+      .social-icons {
+        display: flex;
+        gap: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      .social-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        transition: transform 0.18s, box-shadow 0.18s;
+        border: 2px solid #e9f0e9;
+      }
+      .social-btn:hover {
+        transform: scale(1.08);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+      }
+      .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: flex-start;
+      }
+      .other-links {
+        display: flex;
+        gap: 1.2rem;
+        margin-top: 0.5rem;
+      }
+      .other-btn {
+        padding: 0.6rem 1.2rem;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.08rem;
+        text-decoration: none;
+        color: #fff;
+        background: #23422a;
+        transition: background 0.18s, box-shadow 0.18s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      }
+      .other-btn.linkedin { background: #0077b5; }
+      .other-btn.youtube { background: #e52d27; }
+      .other-btn:hover {
+        background: #3a6c3a;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+      }
+      @media (max-width: 700px) {
+        .modern-contact {
+          padding: 1rem;
+          max-width: 98vw;
+        }
+        .contact-card {
+          padding: 1rem 0.5rem;
+        }
+        .contact-row {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>

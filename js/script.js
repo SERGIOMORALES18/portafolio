@@ -1,4 +1,3 @@
-
 // Pantalla de introducción solo la primera vez
 const enterBtn = document.getElementById('enter-btn');
 const intro = document.getElementById('intro');
@@ -11,8 +10,8 @@ function enterSite() {
     if (intro) intro.style.display = 'none';
     if (mainContent) mainContent.classList.remove('hidden');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    // Guardar en localStorage que ya entró
-    localStorage.setItem('interagro_intro_shown', 'yes');
+    // Guardar en sessionStorage que ya entró
+    sessionStorage.setItem('interagro_intro_shown', 'yes');
   }, 900);
 }
 
@@ -34,7 +33,7 @@ if (introLogo) {
 
 // Mostrar intro solo la primera vez
 window.addEventListener('DOMContentLoaded', () => {
-  if (localStorage.getItem('interagro_intro_shown') === 'yes') {
+  if (sessionStorage.getItem('interagro_intro_shown') === 'yes') {
     if (intro) intro.style.display = 'none';
     if (mainContent) mainContent.classList.remove('hidden');
   }

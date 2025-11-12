@@ -1,0 +1,92 @@
+
+/* contacto.css - Estilo consistente con Objetivos y otras páginas */
+
+body {
+  background: #f6f6f6;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #23422a;
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: 3rem auto;
+  background: #f3f5ef;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  color: #23422a;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-section label {
+  font-weight: 600;
+  color: #23422a;
+  margin-bottom: 0.3rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #c7d1c7;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: #fff;
+  color: #23422a;
+  transition: border-color 0.2s;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+  border-color: #23422a;
+  outline: none;
+}
+
+.contact-section button {
+  background: #23422a;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
+}
+
+.contact-section button:hover {
+  background: #3a6c3a;
+}
+
+.contact-info {
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  color: #23422a;
+  text-align: left;
+  background: #e9f0e9;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .contact-section {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
